@@ -12,8 +12,20 @@
             background-color: #f4f4f4;
         }
         h1 { color: #333; }
-        h2 { color: #444; }
-        p { font-size: 18px; color: #555; max-width: 800px; margin: 0 auto 20px; }
+        h2, h3 {
+            color: #444;
+            cursor: pointer;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        p, ul {
+            font-size: 18px;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            display: none;
+        }
         .container {
             max-width: 900px;
             margin: auto;
@@ -43,10 +55,24 @@
             background-color: #0056b3;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("h2, h3").forEach(header => {
+                header.addEventListener("click", function() {
+                    let nextElement = this.nextElementSibling;
+                    while (nextElement && (nextElement.tagName === "P" || nextElement.tagName === "UL")) {
+                        nextElement.style.display = nextElement.style.display === "none" ? "block" : "none";
+                        nextElement = nextElement.nextElementSibling;
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <h1>Beyond the Roadmap</h1>
     <div class="nav">
+        <a href="index.html" class="button">Home</a>
         <a href="about.html" class="button">About</a>
         <a href="services.html" class="button">Services</a>
         <a href="contact.html" class="button">Contact Us</a>
