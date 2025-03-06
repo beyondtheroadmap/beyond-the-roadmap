@@ -27,18 +27,29 @@
         }
         .nav a {
             text-decoration: none;
-            color: #007bff;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
             font-size: 18px;
-            font-weight: bold;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <h1>Beyond the Roadmap</h1>
     <div class="nav">
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="about.html" class="button">About</a>
+        <a href="services.html" class="button">Services</a>
+        <a href="contact.html" class="button">Contact Us</a>
     </div>
     <p><strong>Turning Strategy into Execution with Clarity, Alignment, and Impact.</strong></p>
     
