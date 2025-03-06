@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Beyond the Roadmap</title>
+</head>
+<body>
+    <h1>About Beyond the Roadmap</h1>
+    <p>Insert details about your mission and background here.</p>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
